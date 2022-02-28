@@ -22,7 +22,7 @@ function isPrime(n) {
 }
 ```
 
-[JS Visualizer 👉🏻](https://pythontutor.com/javascript.html#code=function%20primality%28n%29%20%7B%0A%20%20%20%20if%20%28n%20%3C%3D%201%29%20return%20false%3B%0A%20%20%20%20for%20%28let%20i%20%3D%202%3B%20i%20%3C%20n%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20%20%20%20%20if%20%28n%20%25%20i%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20return%20false%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20return%20true%3B%0A%7D%0A%0Aconsole.log%28primality%2853%29%29%3B&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
+[👉🏻 JS Visualizer](https://pythontutor.com/javascript.html#code=function%20primality%28n%29%20%7B%0A%20%20%20%20if%20%28n%20%3C%3D%201%29%20return%20false%3B%0A%20%20%20%20for%20%28let%20i%20%3D%202%3B%20i%20%3C%20n%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20%20%20%20%20if%20%28n%20%25%20i%20%3D%3D%200%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20return%20false%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20return%20true%3B%0A%7D%0A%0Aconsole.log%28primality%2853%29%29%3B&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D)
 
 **Time Complexity:** O(*n*)
 The time complexity is O(*n*) because this algorithm checks all numabers from 0 to *n*. This is an example of an algorithm that can be easily improved. Think about how this method iterates through 2 to *n*. Is it possible to find a pattern and make the algorithm faster? First, any myltiple of 2s can be ignored, but there is more optimization possible.
